@@ -41,6 +41,6 @@ const PORT = process.env.PORT || 5000;
 // Use ...sync({force: true})... to drop and recreate all tables - WILL WIPE ALL DATA!!!
 db.sequelize.sync().then(function () {
   app.listen(PORT, function () {
-    console.log(`Express web server listening on port: ${PORT}!`);
+    console.log(`\nExpress web server listening on port: ${PORT}!\n`);
   });
 });

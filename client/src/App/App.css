@@ -1,32 +1,119 @@
-.App {
-  text-align: center;
+/* General App Styling */
+
+body {
+  background-color: lightslategray;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px #00467f;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+hr {
+  border-width: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* General Form Styling */
+
+.genFormSettings {
+  margin: 20px;
+}
+
+.form-control {
+  border-radius: 4px;
+  box-shadow: unset;
+  font-size: 15px;
+  height: 27px;
+  padding: 5px 7px;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+.selectStyling {
+  height: 27px !important;
+  padding: 3px;
+}
+
+select:invalid {
+  color: #999 !important;
+}
+
+option:disabled {
+  color: #999 !important;
+}
+
+
+/* General Button Styling */
+
+.genAppBtn {
+  background-color: #00467f;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  outline: none;
+  padding: 10px 20px;
+  min-width: 125px;
+}
+
+.genAppBtn:hover {
+  background-color: #00547f;
+}
+
+.genAppBtn:focus {
+  outline: none;
+}
+
+/* Navigation Styling */
+
+.pageHeaderText {
+  float: left;
+}
+
+.pageHeaderNavBtnContainer {
+  float: right;
+}
+
+.pageHeaderNavBtn {
+  background-color: lightskyblue;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  margin: 17px 0 0 10px;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.pageHeaderNavBtn:hover {
+  background-color: #00547f;
+}
+
+.pageHeaderNavBtn:focus {
+  outline: none;
+}
+
+.pageHeaderHr {
+  overflow: auto;
+  clear: both;
 }
