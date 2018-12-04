@@ -76,7 +76,7 @@ class Dashboard extends React.Component {
 
         <Row>
 
-          <Col size="md" span="12">
+          <Col overflow="Yes" size="md" span="12">
 
             <div className="dashDataContainer">
               {
