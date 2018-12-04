@@ -1,0 +1,24 @@
+{
+  "development": {
+    "host": "den1.mssql8.gear.host",
+    "database": "amscad",
+    "dialect": "mssql",
+    "username": "amscad",
+    "password": "Hr8c_9v~wTpj"
+  },
+  "test": {
+    "host": "127.0.0.1",
+    "port": 3307,
+    "database": "test_database",
+    "dialect": "mysql",
+    "username": "root",
+    "password": null
+  },
+  "production": {
+    "host": "den1.mssql8.gear.host",
+    "database": "amscad",
+    "dialect": "mssql",
+    "username": "amscad",
+    "password": "Hr8c_9v~wTpj"
+  }
+}

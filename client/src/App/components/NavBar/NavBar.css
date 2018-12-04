@@ -1,0 +1,24 @@
+/* NavBar Styling */
+
+.navbar {
+    box-shadow: 0 2px 4px 0 rgba(38, 47, 42, 1.0), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    border: 0px solid black;
+    background: linear-gradient(180deg, lightgray, white 21%, lightgray 69%);
+}
+
+#navBarLogoText {
+    height: 80px;
+    min-height: 80px;
+    padding: 5px 5px 5px 10px;
+}
+
+.navBarAppHeader {
+    position: absolute;
+    right: 20px;
+}
+
+#navBarAppText {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px #262f2a;
+}

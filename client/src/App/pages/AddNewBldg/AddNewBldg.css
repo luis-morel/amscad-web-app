@@ -1,0 +1,39 @@
+/* Add New Building Page Styling */
+
+#buildingDisplayContainer {
+    margin: 20px;
+}
+
+#buildingDisplayHeader {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+#buildingDisplayHr {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+#buildingDisplay {
+    text-align: center;
+}
+
+.buildingDisplayBtn {
+    background-color: lightskyblue; /* #00467f; */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    margin: 0 10px 10px 0;
+    outline: none;
+    padding: 3px 20px;
+    min-width: 260px;
+}
+  
+.buildingDisplayBtn:hover {
+    background-color: #00547f;
+}
+  
+.buildingDisplayBtn:focus {
+    outline: none;
+}

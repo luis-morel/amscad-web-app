@@ -1,0 +1,35 @@
+/* Add New Room Page Styling */
+
+#roomDisplay {
+    margin: 20px;
+}
+
+#roomDisplayHeader {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+#roomDisplayHr {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.roomDisplayBtn {
+    background-color: lightskyblue; /* #00467f; */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    margin: 0 10px 10px 0;
+    outline: none;
+    padding: 3px 20px;
+    min-width: 125px;
+}
+  
+.roomDisplayBtn:hover {
+    background-color: #00547f;
+}
+  
+.roomDisplayBtn:focus {
+    outline: none;
+}
