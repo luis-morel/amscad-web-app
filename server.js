@@ -20,13 +20,12 @@ app.use(logger); // Adding 'morgan'
 app.use(session({ secret: "ILoveP1zza", resave: true, saveUninitialized: true }));
 app.use(passport.initialize()); // Adding 'passport'
 app.use(passport.session());
-app.use("/api", api); // Adding API routes
-app.use("/auth", auth); // Adding Authentication routes
 
-// Serving up static assets (for hosting platforms such as Heroku)
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+// Adding authentication and API routes
+app.use("/api", api);
+app.use("/auth", auth);
+
+// Serving up static assets, production build (for hosting platforms such as Heroku)
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Directing all requests to ReactJS app - API routes must be defined before this is executed!!!
@@ -38,7 +37,7 @@ app.get("*", function (req, res) {
 const PORT = process.env.PORT || 5000;
 
 // Connecting to MSSQL and then initializing Express web server
-// Use ...sync({force: true})... to drop and recreate all tables - WILL WIPE ALL DATA!!!
+// Use ...sync({ force: true })... to drop and recreate all tables - WILL WIPE ALL DATA!!!
 db.sequelize.sync().then(function () {
   app.listen(PORT, function () {
     console.log(`\nExpress web server listening on port: ${PORT}!\n`);
